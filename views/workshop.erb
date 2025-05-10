@@ -1,0 +1,14 @@
+<h1> Taller de <%= @name%></h1><br>
+
+<p> <%= @description %></p> <br>
+
+<div>
+    <button><a href="/<%= @name%>/edit">Editar Taller</a></button>
+    <br>
+    <form action="/<%= @name%>" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" name="delete" value="Borrar Taller">
+    </form>
+
+    <button><a href="/">Volver a la pagina principal</a></button>
+</div>

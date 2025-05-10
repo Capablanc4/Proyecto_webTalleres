@@ -1,0 +1,12 @@
+<h1> Talleres del ciclo academico 2025 - 2026  </h1> <br>
+<% @files.drop(2).each do |file_name| %>
+    <a href="/<%= File.basename(file_name,".*") %>"> 
+    <%= File.basename(file_name,".*")%></a><br>  
+<% end %>
+<br>
+<!--
+<a href="/create">Pulse aqui si desea crear un nuevo curso</a><b></b>
+-->
+<form action="/create" method="get">
+    <button type="submit">Ingresar un nuevo curso</button>
+</form>

@@ -1,0 +1,9 @@
+<h1>Editar Taller de <%= @name %></h1>
+<form action="/<%= @name%>" method="post">
+        <input type="hidden" name="_method" value="put">
+        <fieldset>
+            <textarea name="description" rows="10" cols="50" id="description"><%= @description %></textarea>
+        </fieldset>
+
+        <input type="submit" name="delete" value="Editar Taller">
+    </form>
